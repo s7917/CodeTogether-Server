@@ -70,13 +70,13 @@ io.on("connection", (socket) => {
 });
 
 
-app.get("/", (req, res) => {
-  compiler.flush(()=>{
-    console.log("Deleted")
-  })
-  //res.sendFile("D:/FullStack Projects/Code_Collaborator/Client/src/component/Editor.js")
-  console.log("hiiiiiii")
-})
+// app.get("/", (req, res) => {
+//   compiler.flush(()=>{
+//     console.log("Deleted")
+//   })
+//   //res.sendFile("D:/FullStack Projects/Code_Collaborator/Client/src/component/Editor.js")
+//   console.log("hiiiiiii")
+// })
 
 app.post("/compile", (req, res)=> {
   var code = req.body.code;
