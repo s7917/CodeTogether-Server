@@ -10,7 +10,7 @@ const options = { stats: true }; //prints stats on console
 compiler.init(options);
 
 app.use(bodyParser.json());
-app.use("/Client", express.static("D:/FullStack Projects/Code_Collaborator/Client"))
+//app.use("/Client", express.static("D:/FullStack Projects/Code_Collaborator/Client"))
 app.use(cors())
 
 
